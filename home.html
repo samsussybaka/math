@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <title>JavaScript</title>
+    </head>
+    <body style="text-align: center;">
+        <h1>
+            fisaghuras formula
+        </h1>
+
+        <label for="ghaede-1">
+            Enter the value of First Ghaede
+        </label>
+
+        <input type="number" id="ghaede-1" placeholder="Enter the First ghaede">
+        <br><br>
+
+        <label for="ghaede-2">
+            Enter the value of second Ghaede
+        </label>
+
+        <input type="number" id="ghaede-2" placeholder="Enter the Second ghaede">
+        <br><br>
+
+        <button onclick="Area()">Click Here!</button>
+  
+        <p>
+            Value of vatar: <span id="display"></span>
+        </p>
+        <p>
+            <a href="https://github.com/samsussybaka/math.git">sam shahverdi</a>
+        </p>
+
+        <script type="text/javascript">
+            function Area() {
+            //var vatar = parseInt(document.getElementById("vatar").value);
+
+            var Firstghaede = parseInt(document.getElementById("ghaede-1").value);
+
+            var Secondghaede = parseInt(document.getElementById("ghaede-2").value);
+
+            console.log(typeof(Firstghaede));
+            var a = Firstghaede * Firstghaede + Secondghaede * Secondghaede;
+            var b = a * a;
+            var c = b / a;
+            document.getElementById("display").innerHTML = c;
+
+            }
+        </script>
+
+
+    </body>
+</html>  
